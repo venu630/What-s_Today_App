@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: #d8d8ee;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2em 2em;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  padding-left: 10em;
+  padding-top: 7em;
+}
+
+.newsImage {
+  animation: Slide_Up 1.4s ease;
+  max-width: 30em;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10em;
+  padding-right: 10em;
+  padding-top: 7em;
+}
+
+.heading {
+  font-size: 3em;
+  padding-bottom: 1em;
+  animation: Slide_Up 1.4s ease;
+}
+
+.buttons {
+  border-radius: 4em;
+  padding: 0.5em 0.5em;
+  cursor: pointer;
+  border: none;
+  background-color: #5a7ae6;
+  color: white;
+  text-align: center;
+  transition: 0.3s ease;
+  animation: Slide_Up 2.1s ease;
+}
+
+.buttons:hover {
+  background-color: #a4b4e9;
+  color: black;
+}
+
+.signIn-button {
+  font-size: 1.3em;
+  margin: 1em;
+}
+
+.signUp-button {
+  font-size: 1.3em;
+  margin: 1em;
+}
+
+.circle {
+  z-index: -1;
+  background: rgb(255, 255, 255);
+  width: 60em;
+  height: 60em;
+  border-radius: 50%;
+  filter: blur(3px);
+
+  position: absolute;
+  top: -100px;
+  left: -180px;
+  animation: Slide_right 1.4s ease;
+}
+
+@keyframes Slide_Up {
+  0% {
+    transform: translateY(250px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes Slide_right {
+  0% {
+    transform: translateX(-500px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

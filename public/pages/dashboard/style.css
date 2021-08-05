@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  /* background-color: white; */
+  background-color: #d8d8ee;
+
+}
+.main {
+  padding: 20px 20px 20px 20px;
+}
+
+.header {
+  padding-left: 50px;
+  padding-right: 75px;
+  min-height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  font-size: 25px;
+}
+
+.welcomeTitle > span {
+  color: #ff941b;
+  font-family: "Style Script", cursive;
+}
+
+.searhBox {
+  height: 30px;
+  width: 250px;
+  display: flex;
+  align-items: row;
+  background-color: white;
+  border-radius: 15px;
+  border: 2px solid black;
+}
+
+.search {
+  height: 25px;
+  width: 250px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding-left: 10px;
+}
+
+.topic {
+  padding-top: 70px;
+  padding-left: 50px;
+  display: grid;
+  grid-gap: 55px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.sports,
+.entertainment,
+.business,
+.health,
+.science,
+.general,
+.technology,
+.political {
+  background-color: white;
+  /* color: white; */
+  height: 200px;
+  width: 250px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+.sports:hover,
+.health:hover,
+.entertainment:hover,
+.business:hover,
+.science:hover,
+.technology:hover,
+.political:hover,
+.general:hover {
+  color: rgba(112, 111, 211, 1);
+  border: 2px solid rgba(112, 111, 211, 1);
+  box-shadow: 0px 0px 0px 1px rgba(58, 57, 110);
+  animation: anim-shadow 0.3s forwards;
+}
+
+@keyframes anim-shadow {
+  100% {
+    box-shadow: 0px 0px 50px 20px rgba(112, 111, 211, 0);
+  }
+}
